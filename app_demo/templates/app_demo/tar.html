@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>{{name}}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="alert alert-success"><p class="text-center"><h3>{{now}} / {{finally}}</h3></p></div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60"
+            aria-valuemin="0" aria-valuemax="100" style="width: {{bar}};">
+
+        </div>
+    </div>
+<div class="jumbotron">
+    <div class="container">
+        <h2>{{name}}</h2>
+        <div class="panel panel-default">
+    <div class="panel-body">
+        <h4>{{context}}</h4>
+    </div>
+        <p class="text-center"><a href={{last}} class="btn btn-primary btn-lg" role="button">
+         返回上一个</a>
+            &ensp;<a href=/label/ class="btn btn-primary btn-lg" role="button">
+         显示具体说明</a>
+        </p>
+    </div>
+        &ensp;
+</div>
+</div>
+&ensp;
+<p class="text-center">
+    <a href={{link1}}><button type="button" class="btn btn-default"><h1>组织机构</h1></button></a>
+    &ensp;&ensp;&ensp;
+    <a href={{link2}}><button type="button" class="btn btn-default"><h1>位置</h1></button></a>
+    &ensp;&ensp;&ensp;
+    <a href={{link3}}><button type="button" class="btn btn-default"><h1>人物</h1></button></a>
+    &ensp;&ensp;&ensp;
+    <a href={{link4}}><button type="button" class="btn btn-default"><h1>作品</h1></button></a>
+    &ensp; &ensp; &ensp;
+    <a href={{link0}}><button type="button" class="btn btn-default"><h1>其他</h1></button></a>
+</p>
+<ul class="list-group">
+    <li class="list-group-item">组织机构
+    <span class="badge">{{num1}}</span></li>
+    <li class="list-group-item">位置
+    <span class="badge">{{num2}}</span></li>
+    <li class="list-group-item">人物
+    <span class="badge">{{num3}}</span></li>
+    <li class="list-group-item">作品
+    <span class="badge">{{num4}}</span></li>
+    <li class="list-group-item">其他
+    <span class="badge">{{num0}}</span></li>
+</ul>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+</body>
+</html>
